@@ -1,30 +1,22 @@
 package inputdemo;
 import java.util.Scanner;
 
-/**
- *
- * @author Tim Shaffer
- */
 public class InputDemo {
-
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        
+       
         System.out.print("Enter an integer: ");
         int myInt = input.nextInt();
         System.out.printf("You entered %d.%n%n", myInt);
-        
+
         System.out.print("Enter a double: ");
-        double myDouble = input.nextDouble();
-        System.out.printf("You entered %.2f%n%n", myDouble);
-        
-        System.out.print("Enter a string: ");
+        double myDouble = input.nextDouble();   
+        System.out.printf("You entered %.2f.%n%n", myDouble);
+
+        System.out.print("Enter a string: ");    
         input.nextLine();
         String myString = input.nextLine();
-        System.out.printf("You entered \"%s\", %n%n", myString);
-    }
-    
+        System.out.printf("You entered \"%s\".%n%n", myString);
+
+    }    
 }
